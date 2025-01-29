@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">🍽️ Yummy Bites</div>
+        <button class="menu-toggle">☰</button>
+        <nav>
+            <ul>
+                <li><a href="#home"><span>🏠</span> Home</a></li>
+                <li><a href="#about"><span>👨‍🍳</span> About</a></li>
+                <li><a href="#blog"><span>📖</span> Blog</a></li>
+                <li><a href="#contact"><span>📞</span> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <section id="home" class="hero">
+        <h2>🏠 Welcome to Yummy Bites!</h2>
+        <p>🍕 Discover the joy of cooking! 🍔
+        </p>
+    </section>
+
+    <section id="about">
+        <h2>👨‍🍳 About Us</h2>
+        <p>Welcome to Yummy Bites, your ultimate destination for delicious recipes, kitchen tips, and food inspiration! 🍽️✨</p>
+        <p>Sharing mouth-watering recipes and foodie adventures.</p>
+    </section>
+
+    <section id="blog">
+        <h2>📖 Food Blogs</h2>
+        <div class="blog-container">
+            <div class="blog-post">
+                <img src="foods/pizza.png" alt="pizza">
+                <h3>Homemade Pizza</h3>
+                <p>Learn to make restaurant-style pizza at home.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="blog-post">
+                <img src="foods/dessert.png" alt="Dessert">
+                <h3>Sweet Desserts</h3>
+                <p>Indulge in heavenly sweets and treats.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="blog-post">
+                <img src="foods/burger.png" alt="Dessert">
+                <h3>Cheesy Burger</h3>
+                <p>Homemade Burger with Cheesy Burst.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="blog-post">
+                <img src="foods/pasta.png" alt="Dessert">
+                <h3>Delicious Pasta</h3>
+                <p>Yummy Pasta with coriander.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="blog-post">
+                <img src="foods/noodles.png" alt="Dessert">
+                <h3>Spicy Noodles</h3>
+                <p>Noodles with Full of Vegies.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="blog-post">
+                <img src="foods/dosa.png" alt="Dessert">
+                <h3>Tasty Dosa</h3>
+                <p>Dosa with 3 of combo.</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>📞 Contact Us</h2>
+        <p>Email: contact@yummybites.com</p>
+    </section>
+
+    <footer>
+        <p>© 2025 Yummy Bytes. All rights reserved.</p>
+    </footer>
+    <script>
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navMenu = document.querySelector("nav ul");
+        menuToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("show");
+        });
+    </script>
+</body>
+</html>
